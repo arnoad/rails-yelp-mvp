@@ -1,0 +1,14 @@
+<div class="m-5"><h1>Restaurants:</h1>
+  <div>
+    <ul>
+      <% @restaurants.each do |restaurant| %>
+        <li>
+          <%= link_to restaurant.name, restaurant_path(restaurant) %>
+        </li>
+      <% end %>
+    </ul>
+
+  <a href='/restaurant/new' class="btn btn-primary"> + Add a restaurant</a>
+
+  </div>
+</div>
